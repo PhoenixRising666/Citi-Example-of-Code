@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		663F13E12236BF7600E1779E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F13E02236BF7600E1779E /* AppDelegate.swift */; };
+		663F13E32236BF7600E1779E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F13E22236BF7600E1779E /* ViewController.swift */; };
+		663F13E62236BF7700E1779E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663F13E42236BF7600E1779E /* Main.storyboard */; };
+		663F13E82236BF7800E1779E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663F13E72236BF7800E1779E /* Assets.xcassets */; };
+		663F13EB2236BF7800E1779E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663F13E92236BF7800E1779E /* LaunchScreen.storyboard */; };
+		663F13F72236C99A00E1779E /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F13F62236C99A00E1779E /* MessagingViewController.swift */; };
+		663F13FC2236E62300E1779E /* LivePersonSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F13FB2236E62300E1779E /* LivePersonSDK.swift */; };
+		663F13FF2236ED0E00E1779E /* UIColor+LivePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F13FE2236ED0E00E1779E /* UIColor+LivePerson.swift */; };
+		666CC39F224950EF00A3D7DC /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666CC39E224950EF00A3D7DC /* SecondaryViewController.swift */; };
+		C106F66431807AF56FB770B2 /* Pods_CitiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0BC8A2125D83A812246EEAC /* Pods_CitiApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		659013B16C47FE4796F79D47 /* Pods-CitiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CitiApp/Pods-CitiApp.release.xcconfig"; sourceTree = "<group>"; };
+		663F13DD2236BF7600E1779E /* CitiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		663F13E02236BF7600E1779E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		663F13E22236BF7600E1779E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		663F13E52236BF7600E1779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		663F13E72236BF7800E1779E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		663F13EA2236BF7800E1779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		663F13EC2236BF7800E1779E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663F13F62236C99A00E1779E /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
+		663F13FB2236E62300E1779E /* LivePersonSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePersonSDK.swift; sourceTree = "<group>"; };
+		663F13FE2236ED0E00E1779E /* UIColor+LivePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LivePerson.swift"; sourceTree = "<group>"; };
+		666CC39E224950EF00A3D7DC /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		B2F1B38F6E09F968CCD1A3D3 /* Pods-CitiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CitiApp/Pods-CitiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C0BC8A2125D83A812246EEAC /* Pods_CitiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CitiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		663F13DA2236BF7600E1779E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C106F66431807AF56FB770B2 /* Pods_CitiApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EE96647985D09EECAF03F5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2F1B38F6E09F968CCD1A3D3 /* Pods-CitiApp.debug.xcconfig */,
+				659013B16C47FE4796F79D47 /* Pods-CitiApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		663F13D42236BF7600E1779E = {
+			isa = PBXGroup;
+			children = (
+				663F13DF2236BF7600E1779E /* CitiApp */,
+				663F13DE2236BF7600E1779E /* Products */,
+				2EE96647985D09EECAF03F5D /* Pods */,
+				92DA22A52557C56CD8596FBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		663F13DE2236BF7600E1779E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				663F13DD2236BF7600E1779E /* CitiApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		663F13DF2236BF7600E1779E /* CitiApp */ = {
+			isa = PBXGroup;
+			children = (
+				663F13F32236BFB400E1779E /* Delegates */,
+				663F13FD2236ECDA00E1779E /* Helpers */,
+				663F13FA2236E51700E1779E /* Messaging */,
+				663F13F52236BFC300E1779E /* Resources */,
+				663F13F22236BFA500E1779E /* ViewControllers */,
+				663F13EC2236BF7800E1779E /* Info.plist */,
+			);
+			path = CitiApp;
+			sourceTree = "<group>";
+		};
+		663F13F22236BFA500E1779E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				663F13E22236BF7600E1779E /* ViewController.swift */,
+				663F13F62236C99A00E1779E /* MessagingViewController.swift */,
+				666CC39E224950EF00A3D7DC /* SecondaryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		663F13F32236BFB400E1779E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				663F13E02236BF7600E1779E /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		663F13F52236BFC300E1779E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				663F13E42236BF7600E1779E /* Main.storyboard */,
+				663F13E72236BF7800E1779E /* Assets.xcassets */,
+				663F13E92236BF7800E1779E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		663F13FA2236E51700E1779E /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				663F13FB2236E62300E1779E /* LivePersonSDK.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		663F13FD2236ECDA00E1779E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				663F13FE2236ED0E00E1779E /* UIColor+LivePerson.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		92DA22A52557C56CD8596FBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0BC8A2125D83A812246EEAC /* Pods_CitiApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		663F13DC2236BF7600E1779E /* CitiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 663F13EF2236BF7800E1779E /* Build configuration list for PBXNativeTarget "CitiApp" */;
+			buildPhases = (
+				DF6F8B637067AB26F3AB87C9 /* [CP] Check Pods Manifest.lock */,
+				663F13D92236BF7600E1779E /* Sources */,
+				663F13DA2236BF7600E1779E /* Frameworks */,
+				663F13DB2236BF7600E1779E /* Resources */,
+				EF291496BA67619C5DA70B11 /* [CP] Embed Pods Frameworks */,
+				3CF467753F9B5839CAFC4B08 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CitiApp;
+			productName = CitiApp;
+			productReference = 663F13DD2236BF7600E1779E /* CitiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		663F13D52236BF7600E1779E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "David Villacis";
+				TargetAttributes = {
+					663F13DC2236BF7600E1779E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 663F13D82236BF7600E1779E /* Build configuration list for PBXProject "CitiApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 663F13D42236BF7600E1779E;
+			productRefGroup = 663F13DE2236BF7600E1779E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				663F13DC2236BF7600E1779E /* CitiApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		663F13DB2236BF7600E1779E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663F13EB2236BF7800E1779E /* LaunchScreen.storyboard in Resources */,
+				663F13E82236BF7800E1779E /* Assets.xcassets in Resources */,
+				663F13E62236BF7700E1779E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CF467753F9B5839CAFC4B08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CitiApp/Pods-CitiApp-resources.sh",
+				"${PODS_ROOT}/LPInfra/LPMessagingSDKModels.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LPMessagingSDKModels.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CitiApp/Pods-CitiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6F8B637067AB26F3AB87C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CitiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF291496BA67619C5DA70B11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CitiApp/Pods-CitiApp-frameworks.sh",
+				"${PODS_ROOT}/LPAMS/LPAMS.framework",
+				"${PODS_ROOT}/LPInfra/LPInfra.framework",
+				"${PODS_ROOT}/LPMessagingSDK/LPMessagingSDK.framework",
+				"${PODS_ROOT}/LPMonitoring/LPMonitoring.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LPAMS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LPInfra.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LPMessagingSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LPMonitoring.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CitiApp/Pods-CitiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		663F13D92236BF7600E1779E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663F13E32236BF7600E1779E /* ViewController.swift in Sources */,
+				663F13E12236BF7600E1779E /* AppDelegate.swift in Sources */,
+				663F13F72236C99A00E1779E /* MessagingViewController.swift in Sources */,
+				663F13FF2236ED0E00E1779E /* UIColor+LivePerson.swift in Sources */,
+				663F13FC2236E62300E1779E /* LivePersonSDK.swift in Sources */,
+				666CC39F224950EF00A3D7DC /* SecondaryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		663F13E42236BF7600E1779E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				663F13E52236BF7600E1779E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		663F13E92236BF7800E1779E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				663F13EA2236BF7800E1779E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		663F13ED2236BF7800E1779E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		663F13EE2236BF7800E1779E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		663F13F02236BF7800E1779E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F1B38F6E09F968CCD1A3D3 /* Pods-CitiApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYHM2D8R8Q;
+				INFOPLIST_FILE = CitiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsupport.CitiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		663F13F12236BF7800E1779E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 659013B16C47FE4796F79D47 /* Pods-CitiApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYHM2D8R8Q;
+				INFOPLIST_FILE = CitiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsupport.CitiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		663F13D82236BF7600E1779E /* Build configuration list for PBXProject "CitiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663F13ED2236BF7800E1779E /* Debug */,
+				663F13EE2236BF7800E1779E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		663F13EF2236BF7800E1779E /* Build configuration list for PBXNativeTarget "CitiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663F13F02236BF7800E1779E /* Debug */,
+				663F13F12236BF7800E1779E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 663F13D52236BF7600E1779E /* Project object */;
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eE1-Ct-dQ5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MessagingViewController-->
+        <scene sceneID="Efj-X8-8pI">
+            <objects>
+                <viewController storyboardIdentifier="MessagingViewController" title="MessagingViewController" id="5je-ax-QXP" customClass="MessagingViewController" customModule="CitiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vSw-Gs-1rG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1Q-Gf-0Vn">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Messaging" id="AwQ-Um-Ife">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Do4-bI-aAh">
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="5je-ax-QXP" id="Krb-bL-zd9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="End" id="NjI-Gf-8qE">
+                                            <connections>
+                                                <action selector="endConversationButtonPressed:" destination="5je-ax-QXP" id="1cL-04-S91"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U1Q-Gf-0Vn" firstAttribute="trailing" secondItem="Ryl-FL-1tD" secondAttribute="trailing" id="Nxx-vp-ULR"/>
+                            <constraint firstItem="U1Q-Gf-0Vn" firstAttribute="top" secondItem="Ryl-FL-1tD" secondAttribute="top" id="c6t-R3-YTf"/>
+                            <constraint firstItem="U1Q-Gf-0Vn" firstAttribute="leading" secondItem="Ryl-FL-1tD" secondAttribute="leading" id="k3w-TA-F9I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ryl-FL-1tD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Messaging" id="HYg-fM-baO">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="dwF-zN-Vdk">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="5je-ax-QXP" id="eJ6-ym-gfG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="End" id="Vkv-6K-gC1">
+                            <connections>
+                                <action selector="endConversationButtonPressed:" destination="5je-ax-QXP" id="333-Yk-xrz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qgu-ch-4BW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-453"/>
+        </scene>
+        <!--Mail-->
+        <scene sceneID="9MG-21-eN0">
+            <objects>
+                <navigationController id="Xua-Tw-UqO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mail" image="InboxIcon" id="elS-Zi-tVk"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SiM-Sh-VJK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="11S-lP-b9S" kind="relationship" relationship="rootViewController" id="mP8-WN-OQ7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJ7-tw-Jro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="228.93553223388307"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="nn7-6h-QjN">
+            <objects>
+                <viewController id="lpl-OQ-n46" customClass="SecondaryViewController" customModule="CitiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4kb-va-5n0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQC-3u-saw">
+                                <rect key="frame" x="166" y="367" width="45" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SQC-3u-saw" secondAttribute="height" multiplier="15:7" id="NZh-v2-Dpg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QKY-6y-Icw" firstAttribute="trailing" secondItem="SQC-3u-saw" secondAttribute="trailing" constant="164" id="Eny-U9-k7J"/>
+                            <constraint firstItem="SQC-3u-saw" firstAttribute="top" secondItem="QKY-6y-Icw" secondAttribute="top" constant="303" id="WK4-9G-FxT"/>
+                            <constraint firstItem="SQC-3u-saw" firstAttribute="leading" secondItem="QKY-6y-Icw" secondAttribute="leading" constant="166" id="gS9-wH-gxY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QKY-6y-Icw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="zLl-7L-P66"/>
+                    <navigationItem key="navigationItem" title="Test" id="Xcz-ms-4pC">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="MessagingIcon" id="pgv-1v-BH7">
+                            <connections>
+                                <action selector="showMessaging:" destination="lpl-OQ-n46" id="pnT-OP-h3O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sij-kk-kzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="985"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mom-Ts-QQs">
+            <objects>
+                <viewController id="11S-lP-b9S" customClass="ViewController" customModule="CitiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgk-KW-MVv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gm3-6j-03G">
+                                <rect key="frame" x="169" y="323" width="37" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gm3-6j-03G" secondAttribute="height" multiplier="37:21" id="8J8-gV-q5v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gm3-6j-03G" firstAttribute="leading" secondItem="jLC-T7-ART" secondAttribute="leading" constant="169" id="4rE-ko-lEB"/>
+                            <constraint firstItem="jLC-T7-ART" firstAttribute="trailing" secondItem="gm3-6j-03G" secondAttribute="trailing" constant="169" id="hP3-GX-xbM"/>
+                            <constraint firstItem="gm3-6j-03G" firstAttribute="top" secondItem="jLC-T7-ART" secondAttribute="top" constant="259" id="orh-TP-7o3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jLC-T7-ART"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9y5-iX-eFk">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="MessagingIcon" id="gZD-Bt-jEJ">
+                            <connections>
+                                <action selector="showMessagingView:" destination="11S-lP-b9S" id="BIW-fI-zJM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhj-T8-ifL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008.8" y="228.93553223388307"/>
+        </scene>
+        <!--Cloud-->
+        <scene sceneID="7lC-WL-SKo">
+            <objects>
+                <navigationController id="a7M-xw-f3T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cloud" image="SettingsIcon" id="W06-L3-SdX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3OS-Nc-EkL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lpl-OQ-n46" kind="relationship" relationship="rootViewController" id="sZM-S2-rsC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeX-gu-l3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="985"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9ue-Ff-sKo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eE1-Ct-dQ5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZIi-Vx-Z3B">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Xua-Tw-UqO" kind="relationship" relationship="viewControllers" id="s6R-Rb-xmj"/>
+                        <segue destination="a7M-xw-f3T" kind="relationship" relationship="viewControllers" id="EN1-5U-xsi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Htv-It-qsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248.80000000000001" y="228.93553223388307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="InboxIcon" width="24" height="24"/>
+        <image name="MessagingIcon" width="24" height="24"/>
+        <image name="SettingsIcon" width="24" height="24"/>
+    </resources>
+</document>
